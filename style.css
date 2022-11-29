@@ -368,4 +368,11 @@ transform:translateX(0);
     .portfoliowave{
         transform: translateY(305vh);
     }
+    .card{
+        width:70vw;
+    }
+    .contactPage{
+        height:200vh;
+        overflow-y: hidden;
+    }
 }
