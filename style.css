@@ -1,0 +1,357 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+html, body {
+margin:0px;
+padding:0px;
+overflow-x:hidden;
+background-color: black;
+color:#ffffff;
+font-family:'Montserrat', sans-serif;
+font-size: calc(15px + 0.390625vw);
+}
+section{
+display:grid;
+place-items:center;
+align-content:center;
+min-height:100vh;
+z-index:2;
+}
+section div{
+    display:grid;
+    place-items:center;
+    align-content:center;
+    z-index:2;
+}
+
+/*start nav menu code*/
+#nav-toggle{
+    height:3rem;
+    width:3rem;
+    position:fixed;
+    z-index:3;
+    background-color:bisque;
+    left:51.5%;
+    bottom:1rem;
+    transform:translateX(-50%);
+    border:none;
+    border-radius: 5rem;
+    outline:none;
+    box-shadow: 0rem 0rem 5rem rgb(0 0 0 / 35%);
+    cursor:pointer;
+    transition: transform, background-color;
+    transition-timing-function: ease;
+    transition-duration: 400ms;
+}
+#nav-toggle:hover{
+    transform: translateX(-50%) scale(1.04);
+}
+#nav-toggle:active{
+    transform: translateX(-50%) scale(.096);
+}
+#nav-toggle > i{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%) scale(0.9);
+    color: rgb(0 0 0 / 75%);
+    font-size: 1.75rem;
+    opacity:0;
+}
+
+body:not([data-nav="true"]) > #nav-toggle:hover > .open{
+    opacity:1;
+    transform:translate(-50%, -50%) scale(1);
+}
+body[data-nav="true"] > #nav-toggle > .close{
+    opacity:1;
+    transform:translate(-50%, -50%) scale(1);
+}
+#nav-links > .nav-link{
+    text-decoration: none;
+}
+#nav-links > .nav-link > .nav-link-label{
+    color:white;
+    font-size:1.25rem;
+    margin:0rem;
+    text-transform:uppercase;
+
+}
+#nav-links > .nav-link > .nav-link-image{
+    width:max(20vw, 400px);
+    aspect-ratio: 1.8 / 1;
+    border-radius:0.5rem;
+    margin-top:0.75rem;
+    object-fit: cover;
+}
+nav{
+    height:40vh;
+    width:100%;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    z-index:1;
+    background-color: black;
+    box-shadow: 0px -10px 10px rgb(0 0 0 / 35%);
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+#nav-links{
+    display:flex;
+    gap:clamp(1rem, 2vw, 2rem);
+    margin-top: clamp(2rem, 2vw, 3rem);
+    padding:0rem clamp(1rem, 2vw);
+    transform:translateY(70%) scale(0.9);
+    transition: transform 500ms cubic-bezier(.13, .53, .38, .97)
+}
+body[data-nav="true"] > nav >#nav-links{
+    transform:translateY(0%) scale(1);
+}
+body[data-nav="true"] > nav{
+    z-index: 3;
+    overflow-x: scroll;
+}
+/*End nav menu code*/
+a{
+color:#ffffff;
+text-decoration: none;
+}
+a:hover{
+    color:#FF7474;
+    transition:.5s;
+
+}
+/*scroll animation*/
+.hidden{
+opacity:0;
+transition:all 1.3s;
+filter:blur(5px);
+transform: translateX(-100%);
+}
+@media(prefers-reduced-motion){
+    .hidden{
+        transition:none;
+    }
+}
+.show{
+opacity:1;
+filter:blur(0);
+transform:translateX(0);
+}
+.menu:nth-child(2){
+    transition-delay:200ms;
+
+}
+.menu:nth-child(3){
+    transition-delay:300ms;
+
+}
+.menu:nth-child(4){
+    transition-delay:400ms;
+
+}
+.menu:nth-child(5){
+    transition-delay:500ms;
+
+}
+/*end scroll animation*/
+/*wave svgs*/
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 2;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(189% + 1.3px);
+    height: 127px;
+    transform: rotateY(180deg);
+}
+
+.wave .shape-fill {
+    fill: #FF7474;
+}
+
+.topwave{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+}
+
+.topwave svg {
+    position: relative;
+    display: block;
+    width: calc(189% + 1.3px);
+    height: 127px;
+    transform: rotateY(180deg);
+}
+
+.topwave .shape-fill {
+    fill: #FF7474;
+}
+.portfoliowave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    overflow: hidden;
+    line-height: 0;
+    transform: translateY(300vh) rotate(180deg);
+    z-index: 2;
+}
+
+.portfoliowave svg {
+    position: relative;
+    display: block;
+    width: calc(189% + 1.3px);
+    height: 127px;
+    transform: rotateY(180deg);
+}
+
+.portfoliowave .shape-fill {
+    fill: teal;
+}
+/*about wave*/
+.aboutwave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    overflow: hidden;
+    line-height: 0;
+    transform: translateY(400vh) rotate(180deg);
+    z-index: 2;
+}
+
+.aboutwave svg {
+    position: relative;
+    display: block;
+    width: calc(189% + 1.3px);
+    height: 127px;
+    transform: rotateY(180deg);
+}
+
+.aboutwave .shape-fill {
+    fill: #FF7474;
+}
+
+/*End about wave*/
+/*contact wave*/
+.contactwave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    overflow: hidden;
+    line-height: 0;
+    transform: translateY(500vh) rotate(180deg);
+    z-index: 2;
+}
+
+.contactwave svg {
+    position: relative;
+    display: block;
+    width: calc(189% + 1.3px);
+    height: 127px;
+    transform: rotateY(180deg);
+}
+
+.contactwave .shape-fill {
+    fill: teal;
+}
+/*End contact wave*/
+/*end wave svgs*/
+
+/*page divs*/
+.aboutPage, .contactPage, .portfolioPage,.homepage{
+    background-color: teal;
+    height:100vh;
+    width:100vw;
+    z-index: 2;
+    position: relative;
+}
+.contactPage, .portfolioPage{
+    background-color: #FF7474;
+}
+.portfolioPage{
+    height:300vh;
+}
+.header{
+    margin-top:5rem;
+    margin-bottom:5rem;
+}
+/*end page divs*/
+/*portfolio projects cards*/
+.card{
+    background-color: white;
+    height:75vh;
+    width:55vw;
+    color:black;
+    padding-top:0;
+    margin:1rem;
+    box-shadow:0 0 20px rgba(0,0,0,0.2);
+}
+
+/*End portfolio projects cards*/
+
+/*contact form styling*/
+.contactform{
+    width: 400px;
+    margin: 2rem auto;
+    border:2px solid;
+    padding: 2rem;
+    margin-top:0;
+}
+.contactform > label{
+    display:block;
+    padding:.2rem;
+}
+.contactform >input,textarea{
+    display:block;
+    width: 100%;
+    border-radius: 10px;
+    border:none;
+    padding:.5rem;
+    font-size: 16px;
+    font-family:'Montserrat', sans-serif;
+}
+.contactform >input,textarea:focus{
+    outline:none;
+}
+
+.contactform >input{
+    height:1rem;
+}
+.contactform >textarea{
+    height:10rem;
+}
+
+#send-btn{
+    border:0;
+    background-color:bisque;
+    border-radius: 10px;
+    width:60%;
+    padding: .4rem;
+    margin-top: 1rem;
+    margin-left:5rem;
+    transition:.3s;
+    font-family:'Montserrat', sans-serif;
+    font-size: 16px;
+}
+#send-btn:hover{
+    cursor:pointer;
+    opacity:.8;
+}
+#send-btn:active{
+    opacity: .5;
+}
+/*end of contact form styling*/
