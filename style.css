@@ -305,12 +305,14 @@ transform:translateX(0);
 
 /*contact form styling*/
 .contactform{
-    width: 25vw;
+    width: 40vw;
+    height: 50vh;
     margin: 2rem auto;
     border:2px solid;
     padding: 2rem;
     margin-top:0;
 }
+
 .contactform > label{
     display:block;
     padding:.2rem;
@@ -332,17 +334,19 @@ transform:translateX(0);
     height:1rem;
 }
 .contactform >textarea{
-    height:10rem;
+    height:7rem;
 }
 
 #send-btn{
     border:0;
     background-color:bisque;
     border-radius: 10px;
-    width:60%;
+    width:50%;
     padding: .4rem;
-    margin-top: 1rem;
+    margin-top: .5rem;
+    margin-bottom:1rem;
     margin-left:5rem;
+    margin-right: 2rem;
     transition:.3s;
     font-family:'Montserrat', sans-serif;
     font-size: 16px;
@@ -355,3 +359,13 @@ transform:translateX(0);
     opacity: .5;
 }
 /*end of contact form styling*/
+
+/*mobile styling*/
+@media only screen and (max-width:959px){
+    .contactform{
+        width:70vw;
+    }
+    .portfoliowave{
+        transform: translateY(305vh);
+    }
+}
