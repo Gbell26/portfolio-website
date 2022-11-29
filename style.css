@@ -305,7 +305,7 @@ transform:translateX(0);
 
 /*contact form styling*/
 .contactform{
-    width: 400px;
+    width: 25vw;
     margin: 2rem auto;
     border:2px solid;
     padding: 2rem;
