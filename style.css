@@ -96,6 +96,7 @@ nav{
     padding-left: 2rem;
     padding-right: 2rem;
     visibility:hidden;
+
 }
 #nav-links{
     display:flex;
@@ -103,10 +104,12 @@ nav{
     margin-top: clamp(2rem, 2vw, 3rem);
     padding:0rem clamp(1rem, 2vw);
     transform:translateY(70%) scale(0.9);
-    transition: transform 500ms cubic-bezier(.13, .53, .38, .97)
+    transition: transform 500ms cubic-bezier(.13, .53, .38, .97);
+    transition-duration: 0ms;
 }
 body[data-nav="true"] > nav >#nav-links{
     transform:translateY(0%) scale(1);
+    transition-duration: 400ms;
 }
 body[data-nav="true"] > nav{
     visibility:visible;
