@@ -3,6 +3,7 @@ html, body {
 margin:0px;
 padding:0px;
 overflow-x:hidden;
+height:600vh;
 background-color: #FF7474;
 color:#ffffff;
 font-family:'Montserrat', sans-serif;
