@@ -378,6 +378,6 @@ transform:translateX(0);
         width:80vw;
     }
     .portfoliowave{
-        transform: translateY(305vh) rotate(180deg);
+        transform: translateY(315vh) rotate(180deg);
     }
 }
