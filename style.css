@@ -4,7 +4,7 @@ margin:0px;
 padding:0px;
 overflow-x:hidden;
 height:600vh;
-background-color: #FF7474;
+background-color: teal;
 color:#ffffff;
 font-family:'Montserrat', sans-serif;
 font-size: calc(15px + 0.390625vw);
@@ -377,4 +377,54 @@ transform:translateX(0);
     .card{
         width:80vw;
     }
+    .topwave svg{
+        height:105px;
+    }
+    .aboutwave svg{
+        height:105px;
+    }
+    .portfoliowave svg{
+        height:105px;
+    }
+    .wave svg{
+        height:105px;
+    }
+    .contactwave svg{
+        height:105px;
+    }
+}
+@media only screen and (max-width:630px){
+
+    .topwave svg{
+        height:85px;
+    }
+    .aboutwave svg{
+        height:85px;
+    }
+    .portfoliowave svg{
+        height:85px;
+    }
+    .wave svg{
+        height:85px;
+    }
+    .contactwave svg{
+        height:85px;
+    }
+    @media only screen and (max-width:330px){
+
+        .topwave svg{
+            height:65px;
+        }
+        .aboutwave svg{
+            height:65px;
+        }
+        .portfoliowave svg{
+            height:65px;
+        }
+        .wave svg{
+            height:65px;
+        }
+        .contactwave svg{
+            height:65px;
+        }
 }
