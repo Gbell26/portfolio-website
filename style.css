@@ -90,11 +90,12 @@ nav{
     position:fixed;
     left:0px;
     bottom:0px;
-    z-index:0;
+    z-index:3;
     background-color: black;
     box-shadow: 0px -10px 10px rgb(0 0 0 / 35%);
     padding-left: 2rem;
     padding-right: 2rem;
+    visibility:hidden;
 }
 #nav-links{
     display:flex;
@@ -108,7 +109,7 @@ body[data-nav="true"] > nav >#nav-links{
     transform:translateY(0%) scale(1);
 }
 body[data-nav="true"] > nav{
-    z-index: 3;
+    visibility:visible;
     overflow-x: scroll;
 }
 /*End nav menu code*/
@@ -367,13 +368,10 @@ transform:translateX(0);
     .contactform{
         width:70vw;
     }
-    .portfoliowave{
-    }
-    .portfoliowave svg{
-    }
     .card{
         width:80vw;
     }
     .contactPage{
+
     }
 }
