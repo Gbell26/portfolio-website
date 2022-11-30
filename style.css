@@ -377,4 +377,7 @@ transform:translateX(0);
     .card{
         width:80vw;
     }
+    .portfoliowave{
+        transform: translateY(305vh) rotate(180deg);
+    }
 }
