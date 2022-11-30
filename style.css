@@ -211,7 +211,7 @@ transform:translateX(0);
     width: 100vw;
     overflow: hidden;
     line-height: 0;
-    transform: translateY(300vh) rotate(180deg);
+    transform:rotate(180deg);
     z-index: 2;
 }
 
@@ -234,7 +234,7 @@ transform:translateX(0);
     width: 100vw;
     overflow: hidden;
     line-height: 0;
-    transform: translateY(400vh) rotate(180deg);
+    transform: rotate(180deg);
     z-index: 2;
 }
 
@@ -259,7 +259,7 @@ transform:translateX(0);
     width: 100vw;
     overflow: hidden;
     line-height: 0;
-    transform: translateY(500vh) rotate(180deg);
+    transform:rotate(180deg);
     z-index: 2;
 }
 
@@ -376,8 +376,5 @@ transform:translateX(0);
     }
     .card{
         width:80vw;
-    }
-    .portfoliowave{
-        transform: translateY(315vh) rotate(180deg);
     }
 }
