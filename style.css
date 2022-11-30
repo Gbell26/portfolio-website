@@ -326,13 +326,14 @@ transform:translateX(0);
     margin-top: 0;
 }
 .Git-Button{
+
     position:absolute;
     bottom:.5rem;
     left:47.6%;
     margin-top:2rem;
     height:3rem;
     width:3rem;
-    background-color: transparent;
+    background-color:transparent;
     z-index:3;
     border:none;
     border-radius: 5rem;
@@ -343,6 +344,7 @@ transform:translateX(0);
 }
 .Git-Button:hover{
     transform:scale(1);
+
 }
 .Git-Button:active{
     transform:scale(1.09);
@@ -353,8 +355,12 @@ transform:translateX(0);
     left:50%;
     top:50%;
     transform:translate(-50%, -50%);
-
+    color:#333;
     font-size: 3rem;
+}
+.Git-Button > i:hover{
+    color:#FF7474;
+    transition:.5s;
 }
 
 /*End portfolio projects cards*/
