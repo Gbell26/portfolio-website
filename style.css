@@ -349,7 +349,7 @@ transform:translateX(0);
     border-radius: 10px;
     width:60%;
     padding: .4rem;
-    margin-top: .5rem;
+    margin-top: 1.5rem;
     margin-bottom:1rem;
     margin-left:20%;
     margin-right: 3rem;
@@ -410,6 +410,7 @@ transform:translateX(0);
     .contactwave svg{
         height:85px;
     }
+}
     @media only screen and (max-width:330px){
 
         .topwave svg{
