@@ -16,7 +16,7 @@ const toggleNav = () => {
 }
 
 window.addEventListener('click', function(e){
-    if (!document.getElementById('nav').contains(e.target) && (!document.getElementById('nav-toggle').contains(e.target))){
+    if (!document.getElementById('nav-toggle').contains(e.target)){
     if(document.body.dataset.nav === "true") document.body.dataset.nav = "false";
   } 
 })
