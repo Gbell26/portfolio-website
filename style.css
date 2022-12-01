@@ -329,7 +329,7 @@ transform:translateX(0);
 
     position:absolute;
     bottom:.5rem;
-    left:47.6%;
+    left:47.5%;
     margin-top:2rem;
     height:3rem;
     width:3rem;
@@ -421,9 +421,11 @@ transform:translateX(0);
     opacity: .5;
 }
 /*end of contact form styling*/
-.about-me-class{
-    width:90vw;
-    padding:2rem;
+.about-me-div{
+    display:grid;
+    justify-content: center;
+    margin:2rem;
+    
 }
 /*mobile styling*/
 @media only screen and (max-width:959px){
@@ -468,6 +470,12 @@ transform:translateX(0);
     }
     .contactwave svg{
         height:85px;
+    }
+    .card{
+        height:90vh;
+    }
+    .portfolioPage{
+        height:350vh;
     }
 }
     @media only screen and (max-width:330px){
