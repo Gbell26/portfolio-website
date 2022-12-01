@@ -128,7 +128,7 @@ a:hover{
 /*scroll animation*/
 .hidden{
 opacity:0;
-transition:all 1.3s;
+transition:all 1s;
 filter:blur(5px);
 transform: translateX(-100%);
 }
@@ -472,10 +472,13 @@ transform:translateX(0);
         height:85px;
     }
     .card{
-        height:90vh;
+        height:95vh;
     }
     .portfolioPage{
         height:350vh;
+    }
+    .Git-Button{
+        left:45.5%
     }
 }
     @media only screen and (max-width:330px){
